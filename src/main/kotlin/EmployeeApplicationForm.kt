@@ -11,18 +11,17 @@ fun main(){
     var desiredSalary:Int =50000
 
     //personalInformation
-    val lastName:String ="de Jesus"
-    val firstName:String ="Bernadette"
-    val middleName:String ="Perez"
+    var lastName:String ="de Jesus"
+    var firstName:String ="Bernadette"
+    var middleName:String ="Perez"
     var address:String="Miray Cataning Balanga City Bataan"
     var state:String ="Balanga"
-    val zip:Int=2100
-    var homePhone:Long = 101010
+    var zip:Int=2100
+    var homePhone:Long = 101010000
     var cellPhone:Long =  639771634684 //long
     var emailAddress:String= "bernadettedejesus99@gmail.com"
-    val socialSecurityNumber:Long = 453535337
+    var socialSecurityNumber:Long = 453535337
 
-    var citizenship:String="Filipino"
     var isUSCitizen:String="No" /* boolean */
     var isConvicted:String ="No" // boolean
     var isWillingToSubmitDrugTest:String="Yes" //boolean
@@ -30,14 +29,14 @@ fun main(){
 //education
     var schoolName:String ="Bataan Peninsula State University"
     var location:String ="Capitol Drive, Tenejero Balanga City"
-    var yearsAttended:String ="June 17,2019"
+    var yearsAttended:String ="2015-2019"
     var degreeReceived:String = "Bachelor/n's Degree"
     var major:String ="Information Communication and Technology"
-    var others:String ="None"
+    var others:String =" " //this is optional
 
     //employment
     var employer:String="Accenture Philippines"
-    var dateEmployed = LocalDate.of(2021,Month.JULY,24)
+    var dateEmployed:String="June 14,2021"
     var payrate:Int = 30000
     var workPhone:Long =1010101001
     var companyAddress:String ="Cybergate one"
