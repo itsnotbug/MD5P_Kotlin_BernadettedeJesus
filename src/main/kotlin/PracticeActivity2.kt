@@ -1,6 +1,5 @@
-import java.math.RoundingMode
 import java.text.DecimalFormat
-import kotlin.math.roundToInt
+
 
 fun main(){
     //declaration
@@ -8,7 +7,7 @@ fun main(){
     var width =0.0
     var areaOfTriangle =0.0
     var perimeterOfTriangle =0.0
-    val df = DecimalFormat("#.##")
+    val df = DecimalFormat("#.00")
 
     //input
     println("Enter length: ")
