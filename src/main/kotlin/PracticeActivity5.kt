@@ -3,12 +3,9 @@ fun main(){
     var studentName:String =""
     var unitsEnrolled:Int =0
     var pricePerUnit:Double =0.0
-    var computedTutionFee:Double=0.0
+    var computedTuitionFee:Double=0.0
     var cashPayment:Double=0.0
-    var cashPaymentDiscount:Double=0.0
     var twoInstallment:Double=0.0
-    var twoInstallmentDiscount=0.0
-    var threeInstallmentPenalty:Double=0.0
     var threeInstallment:Double=0.0
 
     //Input
@@ -20,18 +17,15 @@ fun main(){
     pricePerUnit = readln().toDouble()
 
     //Process -Computation
-    computedTutionFee = pricePerUnit * unitsEnrolled
-    cashPaymentDiscount = computedTutionFee * 0.10
-    cashPayment = computedTutionFee - cashPaymentDiscount
-    twoInstallmentDiscount = computedTutionFee * 0.05
-    twoInstallment =computedTutionFee + twoInstallmentDiscount
-    threeInstallmentPenalty = cashPaymentDiscount
-    threeInstallment = computedTutionFee +threeInstallmentPenalty
+    computedTuitionFee = pricePerUnit * unitsEnrolled
+    cashPayment = computedTuitionFee - (computedTuitionFee * 0.10)
+    twoInstallment = computedTuitionFee + (computedTuitionFee * 0.05)
+    threeInstallment = computedTuitionFee + (computedTuitionFee + cashPayment)
 
 
     //Output
     println("$studentName, you could avail the following payment mode: ")
-    println("Computed tuition fee : ${String.format("%.2f",computedTutionFee)}")
+    println("Computed tuition fee : ${String.format("%.2f",computedTuitionFee)}")
     println("Payment Mode:")
     println("Cash Payment: ${String.format("%.2f",cashPayment)} dollars")
     println("2-Installment: ${String.format("%.2f",twoInstallment)} dollars")
