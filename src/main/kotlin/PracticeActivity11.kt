@@ -21,19 +21,38 @@ fun main(){
     average= (physicsGrade + algebraGrade + programmingGrade) / 3
 
     //Process -AVERAGE GRADE
-    if((average <=100)&& average >=90){
+   /* if(average <=100){
         gradeStatus ="President lister"
-    }else if((average < 94)&&(average >=89)){
+    }else if(average >=89){
         gradeStatus ="Dean lister"
-    }else if((average < 88) && (average >=83)){
+    }else if(average >=83){
         gradeStatus ="Average Student"
-    }else if((average < 82) && (average >=78)){
+    }else if(average >=78){
         gradeStatus ="Fair"
     }else if(average <78){
         gradeStatus ="Failure"
-    }else{
+    }else if(average > 100){
         gradeStatus =" Invalid grade"
+    }*/
+
+    if(average >100){
+        gradeStatus ="Invalid Grade"
+    }else if(average >=95) {
+        gradeStatus = "President lister"
+    }else if(average >=94){
+        gradeStatus ="Dean lister"
+    }else if(average >=88){
+        gradeStatus ="Average Student"
+    }else if(average >=82){
+        gradeStatus ="Fair"
+}   else if(average <78){
+        gradeStatus = "Failure"
+}
+    if(gradeStatus == "Invalid Grade"){
+        println(gradeStatus)
+    }else{
+        println("$name average grade is ${String.format("%.2f",average)}")
+        println(gradeStatus)
     }
-    println("$name average grade is ${String.format("%.2f",average)}")
-    println(gradeStatus)
+
 }
