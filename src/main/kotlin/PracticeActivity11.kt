@@ -20,21 +20,7 @@ fun main(){
     //computation
     average= (physicsGrade + algebraGrade + programmingGrade) / 3
 
-    //Process -AVERAGE GRADE
-   /* if(average <=100){
-        gradeStatus ="President lister"
-    }else if(average >=89){
-        gradeStatus ="Dean lister"
-    }else if(average >=83){
-        gradeStatus ="Average Student"
-    }else if(average >=78){
-        gradeStatus ="Fair"
-    }else if(average <78){
-        gradeStatus ="Failure"
-    }else if(average > 100){
-        gradeStatus =" Invalid grade"
-    }*/
-
+   //If else process
     if(average >100){
         gradeStatus ="Invalid Grade"
     }else if(average >=95) {
