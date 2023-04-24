@@ -8,14 +8,14 @@ fun main(){
     dollarSize = readln().toInt()
 
     //loop
-    var i:Int=0
-    while (i <=dollarSize){
-        var j = dollarSize
-        while (j >i){
-            print("$")
-            j--
+    for (i in 1..dollarSize) {
+        for(k in i..(dollarSize-1)) {
+            print(" ")
         }
-        println("$")
-        i++
+        for (j in 1..i) {
+            print("$")
+        }
+        println()
     }
+
 }
