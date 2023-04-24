@@ -1,9 +1,7 @@
 package kotlinprograms
-
 fun main(){
-    var age:Int = 0
     println("Please enter your age: ")
-    age = readln().toInt()
+    var age:Int = readln().toInt()
 
     if(age >=18)
     {
