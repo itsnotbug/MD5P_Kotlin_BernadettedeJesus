@@ -5,7 +5,7 @@ fun main(){
     var name:String=" "
 
     //input
-    println("What is name?: ")
+    println("What is the name?: ")
     name = readln()
 
     //loops
