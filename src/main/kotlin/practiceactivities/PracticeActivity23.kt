@@ -3,7 +3,6 @@ fun main() {
     //array List declaration
     var numbers = arrayListOf<Int>()
     var ctr1: Int = 1
-    var ctr2: Int = 0
     var numOfEven:Int=0
 
     repeat(5){
