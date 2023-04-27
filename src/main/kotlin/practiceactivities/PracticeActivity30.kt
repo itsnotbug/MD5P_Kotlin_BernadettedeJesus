@@ -11,8 +11,10 @@ fun main(){
 
     //loops
     for((id,element) in phoneNumbers){
-        if (name.contains(id)){
+        if (name==id){ //== pede din contains
             println("$id's phone number is $element")
+        }else{
+            println("Name does not exist")
         }
     }
 }
