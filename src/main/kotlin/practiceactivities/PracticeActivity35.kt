@@ -4,22 +4,23 @@ fun main() {
     5 3 2
     1 8 9
     */
-    val listOfNumber = mutableListOf<Int>()
+    val matrix = mutableListOf(
+        mutableListOf<Int>(0,0,0),
+        mutableListOf<Int>(0,0,0),
+        mutableListOf<Int>(0,0,0)
+    )
     var number:Int=1
+    var row =0
+    var columns =0
     repeat(9){
         println("Enter a number $number")
-        listOfNumber.add(readln().toInt())
+        matrix[row].add(columns,readln().toInt())
         number++
     }
-    println(listOfNumber.size)
-
-    var row=0
-    while (row<listOfNumber.size){
-        var columns =0
-        var rowSize= listOfNumber.size
-        while (columns < rowSize){
-            for(element in listOfNumber)
-            print("${listOfNumber[0]} \t")
+    println(matrix.size)
+    while (row<matrix.size){
+        while (columns < matrix[row].size){
+            print("${matrix[row][columns]} \t")
             columns++
         }
         row++
