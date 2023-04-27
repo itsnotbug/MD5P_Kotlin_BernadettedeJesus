@@ -5,7 +5,7 @@ fun main() {
     var input: Int = 0
     var isReverse:Boolean=false
     //input
-    println("Enter number:")
+    println("Enter matrix to generate (b by n) :")
     input = readln().toInt()
     number = input * input
     counter = number
