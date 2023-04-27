@@ -11,7 +11,6 @@ fun main() {
         numOfEven = numbers.count() {it%2==0}
         ctr1++
     }
-    //println("There are ${numbers.count()} elements in the array")
     println("There number of even numbers are:  $numOfEven")
 }
 

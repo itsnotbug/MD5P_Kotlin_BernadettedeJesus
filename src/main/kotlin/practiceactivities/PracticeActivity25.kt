@@ -7,22 +7,6 @@ fun main(){
     println("Enter base size of dollar triangle: ")
     dollarSize = readln().toInt()
 
-    //loop
-//    for (i in 1..dollarSize) {
-//            var j:Int=0
-//        for(j in 1..dollarSize){
-//            println("$")
-//        }
-////        for(k in i until dollarSize) {
-////            print(" ")
-////        }
-////        for (j in 1..i) {
-////            print("$")
-////        }
-//        println()
-//    }
-
-
     repeat(dollarSize){
         while (ctr<dollarSize){
             if(ctr<dollarSize-it-1){
