@@ -16,6 +16,13 @@ fun main(){
             input
         }.toMutableList()
     }
+    println("Matrix:")
+    for (row in matrix) {
+        for (element in row) {
+            print("$element ")
+        }
+        println()
+    }
     var rowSum:Int
     var colSum:Int
     var diagonal1Sum:Int = 0
