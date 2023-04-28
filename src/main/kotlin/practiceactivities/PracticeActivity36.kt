@@ -23,6 +23,7 @@ fun main(){
     var isMagicSquare = true
     var magicNumber = matrix[0].sum()
 
+    //loops for getting the sum of row and col
     for (i in matrix.indices) {
         rowSum = 0
         colSum = 0
@@ -37,18 +38,22 @@ fun main(){
             if (i + j == 2) {
                 diagonal2Sum += matrix[i][j]
             }
-            if (rowSum != magicNumber || colSum != magicNumber) {
-                isMagicSquare = false
-            }
+        }
+        //Check if the rowSum and colSum are not equal to the sum of the indexes
+        if (rowSum != magicNumber || colSum != magicNumber) {
+            isMagicSquare = false
         }
     }
+    //check if the diagonal is not equal to the sum of indexes
     if (diagonal1Sum != magicNumber || diagonal2Sum != magicNumber) {
         isMagicSquare = false
     }
+    //Check if condition is true or false
     if (isMagicSquare) {
         println("This is a magic square!")
     } else {
         println("This is not a magic square.")
     }
-
+    //Display sum of matrix indexes
+   // println(magicNumber)
 }
