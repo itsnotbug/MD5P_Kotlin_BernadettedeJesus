@@ -10,7 +10,7 @@ fun main(){
                 number=1
                 println("Invalid input. Please try again.")
                 print("Enter a number $number: ")
-                input = readln()?.toInt()
+                input = readln().toInt()
                 number++
             }
             input
