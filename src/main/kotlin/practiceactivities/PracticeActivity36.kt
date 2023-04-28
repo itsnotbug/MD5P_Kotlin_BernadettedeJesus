@@ -16,7 +16,8 @@ fun main(){
             input
         }.toMutableList()
     }
-
+    var rowSum:Int
+    var colSum:Int
     var diagonal1Sum:Int = 0
     var diagonal2Sum:Int = 0
     var isMagicSquare:Boolean = true
@@ -24,8 +25,8 @@ fun main(){
 
     //loops for getting the sum of row and col
     for (i in matrix.indices) {
-       var rowSum:Int = 0
-       var colSum:Int = 0
+        rowSum = 0
+        colSum = 0
         for (j in matrix.indices) {
             rowSum += matrix[i][j]
             colSum += matrix[j][i]
