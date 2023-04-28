@@ -11,6 +11,7 @@ fun main(){
         setA.add(readln().toInt())
         counter1++
     }
+    println("*****************")
     println("Values for Set B")
     while (counter2 <=5){
         println("Enter number $counter2:")

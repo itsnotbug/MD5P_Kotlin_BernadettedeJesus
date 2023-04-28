@@ -1,33 +1,30 @@
+package practiceactivities
 fun main() {
-    /*
-    6 7 4
-    5 3 2
-    1 8 9
-    */
-    val matrix = mutableListOf(
-        mutableListOf<Int>(0,0,0),
-        mutableListOf<Int>(0,0,0),
-        mutableListOf<Int>(0,0,0)
-    )
     var number:Int=1
-    var row =0
-    var columns =0
-    repeat(9){
-        println("Enter a number $number")
-        matrix[row].add(columns,readln().toInt())
-        number++
+    val matrix = List(3) { i ->
+        List(3) { j ->
+            print("Enter a number $number: ")
+            var input = readln()?.toInt()
+            number++
+            while (input == null) {
+                number=1
+                println("Invalid input. Please try again.")
+                print("Enter a number $number: ")
+                input = readln()?.toInt()
+                number++
+            }
+            input
+        }.toMutableList()
     }
-    println(matrix.size)
-    while (row<matrix.size){
-        while (columns < matrix[row].size){
-            print("${matrix[row][columns]} \t")
-            columns++
+    println("Matrix:")
+    for (row in matrix) {
+        for (element in row) {
+            print("$element ")
         }
-        row++
         println()
     }
-
-
 }
+
+
 
 
