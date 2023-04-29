@@ -4,6 +4,7 @@ fun main(){
     var number = arrayListOf<Double>()
     var ctr=1
     var average:Double=0.0
+
     repeat(5){
         println("Enter number $ctr:")
         number.add(readln().toDouble())
