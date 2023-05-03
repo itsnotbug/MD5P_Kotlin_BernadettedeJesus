@@ -1,5 +1,5 @@
 fun main(){
-    var num = mutableListOf<Int>()
+    val num = mutableListOf<Int>()
     repeat(5){
     println("Enter numbers ${it+1} :")
         num.add(readln().toIntOrNull() ?:0)
