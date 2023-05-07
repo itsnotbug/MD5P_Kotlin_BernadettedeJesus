@@ -1,4 +1,4 @@
-package Challenge
+package kotlinchallenges
 
 fun main(){
 

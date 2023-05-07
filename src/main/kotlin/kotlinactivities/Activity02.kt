@@ -1,4 +1,4 @@
-package practiceactivities
+package kotlinactivities
 
 fun main(){
 

@@ -6,26 +6,26 @@
 //        //higher order function
 //        //functions that can accept another function
 //        //as its parameter
-//
-//
-//
-//
-//
-//}
 
 fun main(){
+
     val input = mutableListOf<Int>()
-    println("Enter number")
-    input.add(readln().toInt())
+    repeat(5){
+        println("Enter number ${it+1}")
+        input.add(readln().toInt())
+    }
 
-    val mylist={ n:List<Int> ->n.toMutableList().toString() }
-    myHigherConversionOfIntToString(mylist)
+    //WOOOOOH HIRAP -_-" PLEASE PINASAKIT NETO ULO KO HAHAHAHAHA.
+    val displayNum={n:Int->"Number $n"}
+    val numList={n:MutableList<Int>->n.toList()}
+    val inputNumList=numList(input)
+    myHigherConversionOfIntToString(inputNumList,displayNum)
 }
 
-fun myHigherConversionOfIntToString(myFunction: (List<Int>) -> String){
-//    .forEach { println(it) }
-//    return println("Number ")
+fun myHigherConversionOfIntToString(inNumList: List<Int>, displayNum: (Int) -> String) {
+    for (num in inNumList) {
+        println(displayNum(num))
+    }
 }
-
 
 
