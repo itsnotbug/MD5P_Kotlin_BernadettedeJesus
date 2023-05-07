@@ -1,8 +1,5 @@
-package practiceactivities
-
-
+package kotlinactivities
 fun main(){
-
 
     //header
     var position:String ="Mobile Developer"

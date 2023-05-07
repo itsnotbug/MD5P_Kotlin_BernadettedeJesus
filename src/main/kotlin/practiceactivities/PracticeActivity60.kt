@@ -15,8 +15,8 @@ fun main(){
         input.add(readln().toInt())
     }
 
-    //WOOOOOH HIRAP -_-" PLEASE PINASAKIT NETO ULO KO HAHAHAHAHA.
-    val displayNum={n:Int->"Number $n"}
+    /* WOOOOOH HIRAP -_-" PLEASE PINASAKIT NETO ULO KO HAHAHAHAHA. */
+    val displayNum={n:Int,->"Number:$n"}
     val numList={n:MutableList<Int>->n.toList()}
     val inputNumList=numList(input)
     myHigherConversionOfIntToString(inputNumList,displayNum)

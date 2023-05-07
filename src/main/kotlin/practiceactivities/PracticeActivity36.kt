@@ -1,21 +1,21 @@
 package practiceactivities
 fun main(){
+    //For this first block of code Line 2-18 -> kindly check yun nasa file history nito for mutable list
+    //kasi gumagana naman yun ang problema kapag pinagsama ko sila di ko maayos
+    //If you can modify it together mas maganda kasi ang nangyare dito parang .NET ko nagawa haha -_-" sa
+    //sa c# kasi may ganyan .to lalo na sa LINQ
+    //I will try to modify this one next time.
+
     var number:Int=1
     val matrix = List(3) { i ->
         List(3) { j ->
             print("Enter a number $number: ")
-            var input = readln()?.toInt()
+            val input = readln().toInt()
             number++
-            while (input == null) {
-                number=1
-                println("Invalid input. Please try again.")
-                print("Enter a number $number: ")
-                input = readln().toInt()
-                number++
-            }
             input
         }.toMutableList()
     }
+    //display the matrix
     println("Matrix:")
     for (row in matrix) {
         for (element in row) {
@@ -28,7 +28,12 @@ fun main(){
     var diagonal1Sum:Int = 0
     var diagonal2Sum:Int = 0
     var isMagicSquare:Boolean = true
-    var magicNumber:Int = matrix[0].sum()
+    val magicNumber:Int = matrix[0].sum()
+
+    //added this comment for disclaimer purposes haha -_-
+    //If ever you copy this code (for those who asked the link of my github), try to understand it, kahit ako nahihirapn pag may rows and cols plus loops
+    //The code below for checking the magic cube comes from different internet resources (technically) -pinagtagpitagpi ko sila (based on how i understand it)
+    //In the end hindi naging clean code. HAHHAA NAPAGHALO KO yun .net hahaha and kotlin. ->Please modify nalang
 
     //loops for getting the sum of row and col
     for (i in matrix.indices) {
@@ -61,6 +66,4 @@ fun main(){
     } else {
         println("This is not a magic square.")
     }
-    //Display sum of matrix indexes
-   // println(magicNumber)
 }
