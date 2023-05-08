@@ -21,7 +21,7 @@ fun main(){
     
     //List of the books available
     //book names from https://thegreatestbooks.org/
-    var bookName = mutableListOf<String>()
+    val bookName = mutableListOf<String>()
     bookName.add("In Search of Lost Time")
     bookName.add("Ulyssese")
     bookName.add("Don Quixote")
@@ -70,6 +70,13 @@ fun main(){
                     println("Item Category: $bookSize")
                     println("Item Color: $bookColor")
 
+                    println()
+                    println("Confirm checkout-- Enter Y to continue and N to exit")
+                    var pick2 = readln().first()
+                    if(pick2.equals('Y') || pick2.equals('y')){
+
+                    }
+
                 }
                 2->{
                     bookColor="Blue"
@@ -89,10 +96,10 @@ fun main(){
                 }
                 3->{
                     bookColor="Orange"
-                    bookCategory="Poetry"
+                    bookCategory="Literature"
                     bookSize=20
-                    bookTitle="Ulyssese"
-                    bookID=12346
+                    bookTitle="Don Quixote"
+                    bookID=12347
                     bookDescription ="None"
 
                     println("Item Category: $bookCategory")
@@ -104,16 +111,65 @@ fun main(){
                     println("Item Color: $bookColor")
                 }
                 4->{
+                    bookColor="Purple"
+                    bookCategory="Adventure"
+                    bookSize=20
+                    bookTitle="Moby Dick"
+                    bookID=12347
+                    bookDescription ="None"
+
+                    println("Item Category: $bookCategory")
+                    println("Item ID: $bookID")
+                    println("Item ID: $bookTitle")
+                    println("Is checked out?: $isCheckedOut")
+                    println("Item Description: $bookDescription")
+                    println("Item Category: $bookSize")
+                    println("Item Color: $bookColor")
 
                 }
                 5->{
+                    bookColor="Brown"
+                    bookCategory="War"
+                    bookSize=20
+                    bookTitle="War and Peace"
+                    bookID=12348
+                    bookDescription ="None"
 
+                    println("Item Category: $bookCategory")
+                    println("Item ID: $bookID")
+                    println("Item ID: $bookTitle")
+                    println("Is checked out?: $isCheckedOut")
+                    println("Item Description: $bookDescription")
+                    println("Item Category: $bookSize")
+                    println("Item Color: $bookColor")
                 }
                 6->{
+                    bookColor="Purple"
+                    bookCategory="Literature"
+                    bookSize=20
+                    bookTitle="Hamlet"
+                    bookID=12349
+                    bookDescription ="None"
 
+                    println("Book Category: $bookCategory   | Book ID: $bookID")
+                    println("Book Number: $bookTitle        | Book Description: $bookDescription")
+                    println("Is checkout?: $isCheckedOut")
                 }
                 7->{
-                    
+                    bookColor="Yellow"
+                    bookCategory="Literature"
+                    bookSize=20
+                    bookTitle="The Odyssey"
+                    bookID=12350
+                    bookDescription ="None"
+
+                    println("Item Category: $bookCategory")
+                    println("Item ID: $bookID")
+                    println("Item ID: $bookTitle")
+                    println("Is checked out?: $isCheckedOut")
+                    println("Item Description: $bookDescription")
+                    println("Item Category: $bookSize")
+                    println("Item Color: $bookColor")
                 }
             }
 
