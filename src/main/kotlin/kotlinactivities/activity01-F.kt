@@ -22,8 +22,8 @@ fun main(){
     println("Enter second string:")
     secondString= readln()
 
-    var firstUnique=getUniqueCharacters(firstString)
-    var secondUnique=getUniqueCharacters(secondString)
+    val firstUnique=getUniqueCharacters(firstString)
+    val secondUnique=getUniqueCharacters(secondString)
 
     val unionString =firstUnique.plus(secondUnique).replace(" ","")
     println(unionString)
