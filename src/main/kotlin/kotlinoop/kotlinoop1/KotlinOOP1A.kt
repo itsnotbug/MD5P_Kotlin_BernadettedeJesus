@@ -1,6 +1,13 @@
-package kotlinoop
+package kotlinoop.kotlinoop1
+class Person{
+    var name:String
+    var age:Int
 
-class Person1C(var name:String,var age:Int){
+    init{
+        name="Pedro"
+        age=21
+    }
+
     fun walk(){
         println("A person walks")
     }
@@ -14,9 +21,8 @@ class Person1C(var name:String,var age:Int){
 }
 
 fun main(){
-    var pedroObject= Person1C("Ringo",21)
+   var pedroObject= Person()
     println(pedroObject.name)
-    println(pedroObject.age)
 
     pedroObject.sayHello()
 }

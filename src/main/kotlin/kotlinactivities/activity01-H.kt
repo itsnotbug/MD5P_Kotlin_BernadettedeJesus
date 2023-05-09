@@ -5,7 +5,6 @@ fun main(){
 //    Then, your application will print all the prime numbers starting from the lower number up to the largest number.
 
     //Check this yt video haha, dyan ko nakuha yun prime function
-    // reference https://www.youtube.com/watch?v=0Gdpe6R_eJk for checking prime
     var input1:Int=0
     var input2:Int=0
 
@@ -39,6 +38,7 @@ fun main(){
     }
 }
 
+// reference https://www.youtube.com/watch?v=0Gdpe6R_eJk for checking prime
 //function that check and display if prime or not :( sakit na ulo ko
 fun isPrime(number:Int):Boolean{
     var result:Boolean =true
