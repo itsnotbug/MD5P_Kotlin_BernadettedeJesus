@@ -36,9 +36,6 @@ fun main(){
     println("Rank #3: "+ranks[4])
 
         }
-
-
-
 fun computeTotalAmount(number: ArrayList<Double>): Double {
     val totalAmt = number.sum()
     return totalAmt
