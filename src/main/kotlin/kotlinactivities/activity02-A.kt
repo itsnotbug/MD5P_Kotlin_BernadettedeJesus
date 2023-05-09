@@ -4,34 +4,25 @@ fun main() {
      //Challenge accepted walang tulugan to -__-
 
      //Since it is about student directory mukhang madami ako maeeliminate -__-"
-     var lastName = mutableListOf<String>()
-     var firstName: String = ""
-     var middleName: String = ""
-     var address: String = ""
-     var contactNumber: Long = 0
-     var email: String = ""
-     var advisorName: String = ""
-     var section: String = ""
-     var enrollmentStatus: String = ""
-     var attendance: Double = 0.0
-     var quizzes: Double = 0.0
-     var exam: Double = 0.0
-     var activities: Double = 0.0
-     var assignment: Double = 0.0
-     var totalAverage: Double = 0.0
-     var finalgrades: Double = 0.0
-     var status: String = ""
      var option: String = ""
 
-     var studentName = mutableListOf<String>("Berna", "Janna", "Camille")
-     var studentLastName = mutableListOf<String>("de Jesus", "dela Cruz", "Puno")
-     var studentAddress = mutableListOf<String>("Balanga,Bataan", "Abucay,Bataan", "Orani,Bataan")
-     var studentEmail =
-         mutableListOf<String>("bpdejesusxx@gmail.com", "jdelacruzxx@gmail.com", "camillegatus98@gmail.com")
-     var studentEnrollmentStatus = mutableListOf<String>("enrolled", "enrolled", "enrolled")
-     var studentSection = mutableListOf<String>("MD5P", "MD5P", "MD5P")
-     var studentContactNum = mutableListOf<Long>(639771634684, 639106678826, 63106678828)
-//     var studentAdvisor
+    //For Student Information
+     val studentName = mutableListOf<String>("Berna", "Janna", "Camille")
+     val studentLastName = mutableListOf<String>("de Jesus", "dela Cruz", "Puno")
+     val studentAddress = mutableListOf<String>("Balanga,Bataan", "Abucay,Bataan", "Orani,Bataan")
+     val studentEmail = mutableListOf<String>("bpdejesusxx@gmail.com", "jdelacruzxx@gmail.com", "camillegatus98@gmail.com")
+     val studentEnrollmentStatus = mutableListOf<String>("enrolled", "enrolled", "enrolled")
+     val studentSection = mutableListOf<String>("MD5P", "MD5P", "MD5P")
+     val studentContactNum = mutableListOf<Long>(639771634684, 639106678826, 63106678828)
+     val totalAverage = mutableListOf<Double>()
+
+    //For Student Tracking Record -Progress
+    val examList= mutableListOf<Double>(95.0,95.5,95.5)
+    val attendanceList= mutableListOf<Double>(100.0,100.0,100.0)
+    val assignmentList= mutableListOf<Double>(50.0,50.0,45.5)
+    val activityList= mutableListOf<Double>(50.0,50.0,50.0)
+
+
      var isSuccess: Boolean = false
      while (!isSuccess) {
      println("-------------------------STUDENT DIRECTORY----------------")
@@ -70,10 +61,23 @@ fun main() {
          "b"->{
              println("Student Status Record")
             try{
-                getStudentRecordTrack()
+                getStudentRecordTrack(studentLastName,studentName,examList,activityList,attendanceList,assignmentList)
+            }catch (ex:Exception){
+                println(ex)
             }
-
+             var answer:Boolean =true
+             if(!isExitOrNot()){
+                 isSuccess =false
+             }else{
+                 isSuccess=true
+             }
          }
+             "c"->{
+                 println("Exits directory successfully!")
+                break
+
+             }
+
      }
  }
 
@@ -110,6 +114,23 @@ fun main() {
              return true
          }
  }
-fun getStudentRecordTrack() {
-    TODO("Not yet implemented")
+fun getStudentRecordTrack(
+    studentLastName: MutableList<String>,
+    studentName: MutableList<String>,
+    examList: MutableList<Double>,
+    activityList: MutableList<Double>,
+    attendanceList: MutableList<Double>,
+    assignmentList: MutableList<Double>) {
+
+    var ctr:Int=0 //counter
+    var status= mutableListOf<String>()
+    println("------------------------------------------Student Tracking Record----------------------------------------------------------")
+    println("FullName\t      |  Exam\t|  Activities \t| Attendance\t| Assignments\t")
+    println("-------------------------------------------------------------------------------------------------------------------------- ")
+    while ((ctr <studentLastName.size) && (ctr < studentName.size) && (ctr< examList.size) && (ctr<activityList.size)&& (ctr<attendanceList.size) && (ctr<assignmentList.size)){
+        println("${studentLastName[ctr]},${studentName[ctr]}\t  | ${examList[ctr]}\t | ${activityList[ctr]}\t\t\t | ${attendanceList[ctr]}\t\t| ${assignmentList[ctr]}\t")
+        ctr++
+
+    }
+    println("==========================================================================================================================")
 }
