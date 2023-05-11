@@ -1,25 +1,29 @@
-fun main(){
+fun main() {
     //Implement ACTIVITY01-C
-    var serialNumber:String ="123-MMMM"
-    var itemName:String ="Yogurt"
-    var category:String="Dairy"
-    var description:String ="Yogurt healthy drinks"
-    var quantity:Int=3
-    var price:Double =100.0
-    var isOutOfStock:Boolean =false
+    val groceryList = arrayListOf("Blueberries", "Mangoes", "Milk", "Eggs", "Sausage", "chicken", "Hotdog", "Butter")
 
+    val fruits = arrayListOf<String>()
+    val dairy = arrayListOf<String>()
+    val frozen = arrayListOf<String>()
 
-    println("Enter product serial number")
-    serialNumber = readln()
-    println("Enter item Name")
+    for (item in groceryList) {
+        when {
+            item in listOf("Hotdog","chicken","Sausage") -> frozen.add(item)
+            item in listOf("Blueberries", "Mangoes") -> fruits.add(item)
+            item in listOf("Milk", "Eggs", "Butter","Pasta",) -> dairy.add(item)
+        }
+    }
+    println("Fruits:")
+    for (fruit in fruits) {
+        println("- $fruit")
+    }
+    println("\nFrozen:")
+    for (frozenItem in frozen) {
+        println("- $frozenItem")
+    }
 
-
-//sample
-//    println("Serial Number: $serialNumber")
-//    println("Name of the item: $itemName")
-//    println("Category: $category")
-//    println("Description: $description")
-//    println("Quantity: $quantity")
-//    println("Price: $price")
-//    println("Available?: $isOutOfStock")
+    println("\nDairy:")
+    for (dairyItem in dairy) {
+        println("- $dairyItem")
+    }
 }
