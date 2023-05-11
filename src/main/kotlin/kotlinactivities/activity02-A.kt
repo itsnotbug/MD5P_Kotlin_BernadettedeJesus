@@ -14,7 +14,6 @@ fun main() {
      val studentEnrollmentStatus = mutableListOf<String>("enrolled", "enrolled", "enrolled")
      val studentSection = mutableListOf<String>("MD5P", "MD5P", "MD5P")
      val studentContactNum = mutableListOf<Long>(639771634684, 639106678826, 63106678828)
-     val totalAverage = mutableListOf<Double>()
 
     //For Student Tracking Record -Progress
     val examList= mutableListOf<Double>(95.0,95.5,95.5)
