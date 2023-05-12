@@ -1,4 +1,4 @@
-package ooppractices
+package ooppractices.ooppractice5
 
 class Student {
     var name:String="Bernadette"

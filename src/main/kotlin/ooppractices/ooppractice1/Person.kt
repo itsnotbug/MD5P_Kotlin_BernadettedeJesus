@@ -1,4 +1,4 @@
-package ooppractices
+package ooppractices.ooppractice1
 
 //Create a class called Person with properties name, age, and email.
 //Add a function called printDetails that prints out

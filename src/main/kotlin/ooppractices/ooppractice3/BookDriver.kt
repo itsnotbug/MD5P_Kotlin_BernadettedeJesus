@@ -1,4 +1,4 @@
-import ooppractices.Book
+import ooppractices.ooppractice3.Book
 
 fun main(){
 
@@ -6,6 +6,6 @@ fun main(){
     //Create a class called Book with properties title, author, and year.
     //Add a function called printDetails that prints out the book's title, author, and year.
 
-     val bookdetails =Book()
+     val bookdetails = Book()
     bookdetails.printDetails()
 }

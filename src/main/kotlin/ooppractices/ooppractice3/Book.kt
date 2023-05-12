@@ -1,4 +1,4 @@
-package ooppractices
+package ooppractices.ooppractice3
 
 class Book {
 

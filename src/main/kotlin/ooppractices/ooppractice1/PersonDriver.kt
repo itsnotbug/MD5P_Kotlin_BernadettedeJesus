@@ -1,4 +1,4 @@
-import ooppractices.Person
+import ooppractices.ooppractice1.Person
 
 fun main(){
     //Call person class
