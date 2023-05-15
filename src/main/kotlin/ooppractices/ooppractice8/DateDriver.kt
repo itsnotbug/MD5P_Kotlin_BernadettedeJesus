@@ -1,5 +1,3 @@
-import ooppractices.ooppractice7.Person
-import ooppractices.ooppractice8.Date
 
 fun main(){
 

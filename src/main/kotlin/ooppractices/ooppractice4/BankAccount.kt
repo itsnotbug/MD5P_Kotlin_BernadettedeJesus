@@ -1,4 +1,4 @@
-package ooppractices.ooppractice4
+
 
 class BankAccount {
 

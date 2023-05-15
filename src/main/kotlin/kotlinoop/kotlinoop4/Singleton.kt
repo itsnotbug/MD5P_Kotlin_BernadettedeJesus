@@ -1,4 +1,4 @@
-package kotlinoop.kotlinoop4
+
 
 object Singleton {
     val PI_VALUE = 3.14

@@ -1,4 +1,4 @@
-import kotlinoop.kotlinoop2.MobilePhone
+
 
 fun main(){
     val myPhone  = MobilePhone(10)

@@ -1,4 +1,4 @@
-package ooppractices.ooppractice6
+
 
 class Shape {
     var width:Int

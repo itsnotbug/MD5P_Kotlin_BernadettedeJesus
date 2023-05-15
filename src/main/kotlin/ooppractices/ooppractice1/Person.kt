@@ -1,6 +1,5 @@
 package ooppractices.ooppractice1
-
-//Create a class called Person with properties name, age, and email.
+//Create a class called kotlinoop.kotlinoop5.Person with properties name, age, and email.
 //Add a function called printDetails that prints out
 //the person's name, age, and email.
 class Person {

@@ -1,6 +1,3 @@
-package kotlinoop.kotlinoop2
-
-import jdk.jfr.DataAmount
 
 class MobilePhone(var load:Int) {
     var messageLogs = mutableListOf<String>()

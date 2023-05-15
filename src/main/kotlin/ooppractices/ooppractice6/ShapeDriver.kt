@@ -1,4 +1,4 @@
-import ooppractices.ooppractice6.Shape
+
 
 fun main(){
 //    OOPPractice6.kt
