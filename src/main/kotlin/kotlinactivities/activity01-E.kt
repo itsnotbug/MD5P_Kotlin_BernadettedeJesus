@@ -12,7 +12,7 @@ fun main(){
         counter++
     }
     println()
-    //(2) TO COMPUTE THE AVERAGE OF TOTAL AMOUNT OF ITEM Using ARRAYLIST
+    //(2) TO COMPUTE  TOTAL AMOUNT OF ITEM Using ARRAYLIST
     println("--------------------------------------------------------")
     val amount = arrayListOf<Double>()
     var ctr=1

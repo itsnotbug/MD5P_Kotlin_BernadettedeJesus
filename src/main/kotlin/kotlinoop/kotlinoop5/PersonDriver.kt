@@ -1,4 +1,4 @@
-import kotlinoop.kotlinoop5.Person
+package kotlinoop.kotlinoop5
 
 fun main(){
     val person1= Person("Peter",21)

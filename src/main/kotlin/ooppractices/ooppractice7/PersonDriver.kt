@@ -1,4 +1,4 @@
-import kotlinoop.kotlinoop5.Person
+package ooppractices.ooppractice7
 
 fun main(){
 

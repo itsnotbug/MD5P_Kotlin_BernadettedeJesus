@@ -1,3 +1,4 @@
+
 package kotlinoop.kotlinoop1
 
 class Person1C(var name:String,var age:Int){
@@ -19,4 +20,4 @@ fun main(){
     println(pedroObject.age)
 
     pedroObject.sayHello()
-}
+ }

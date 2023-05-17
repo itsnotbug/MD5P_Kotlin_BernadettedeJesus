@@ -1,4 +1,4 @@
-import ooppractices.ooppractice12.MathUtils
+package ooppractices.ooppractice12
 
 fun main(){
    val squareOfNum= MathUtils()

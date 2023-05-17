@@ -1,5 +1,4 @@
 package kotlinactivities
-
 fun main(){
 
     //things that can be borrowed in the library and its characteristics

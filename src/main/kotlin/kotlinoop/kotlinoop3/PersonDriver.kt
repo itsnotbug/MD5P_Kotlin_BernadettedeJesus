@@ -1,4 +1,4 @@
-import kotlinoop.kotlinoop3.Person
+package kotlinoop.kotlinoop3
 
 fun main(){
 

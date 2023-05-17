@@ -1,4 +1,4 @@
-
+package ooppractices.ooppractice1
 
 fun main(){
     //Call person class

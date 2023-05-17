@@ -1,5 +1,4 @@
 package kotlinactivities
-
 fun main(){
     //student Directory
     var lastName:String ="de Jesus"

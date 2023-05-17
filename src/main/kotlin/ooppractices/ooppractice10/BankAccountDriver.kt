@@ -1,4 +1,4 @@
-import ooppractices.ooppractice10.BankAccount
+package ooppractices.ooppractice10
 
 fun main() {
 

@@ -1,5 +1,4 @@
 package kotlinactivities
-
 fun main(){
     //store
     var serialNumber:String ="123-MMMM"

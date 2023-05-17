@@ -1,3 +1,4 @@
+package kotlinactivities
 //fun main() {
 ////    1. Create an ArrayList of grocery products with 20 entries.
 //    val groceries = arrayListOf<String>(

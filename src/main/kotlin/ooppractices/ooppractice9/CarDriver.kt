@@ -1,6 +1,4 @@
-import ooppractices.ooppractice8.Date
-import ooppractices.ooppractice9.Car
-
+package ooppractices.ooppractice9
 fun main(){
 
     println("Display Primary Constructor -Initial value")

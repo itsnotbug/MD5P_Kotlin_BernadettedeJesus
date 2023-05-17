@@ -1,3 +1,4 @@
+package kotlinactivities
 fun main(){
 
     //1. Create an ArrayList of names with 20 entries.
@@ -50,8 +51,8 @@ fun countStudent(name: ArrayList<String>):Int{
 
 //6. Create a function "searchStudentWildSearch" that will accept a String and search if that string is found
 // with in the ArrayList, it will return an ArrayList of names that matched if there are.
-fun searchStudentWildSearch(name: String, nameList: ArrayList<String>) {
-    showStudents(name,nameList)
+fun searchStudentWildSearch(nameList: ArrayList<String>) {
+    showStudents(nameList)
 }
 
 //7. Create a function  "searchStudentName" that will accept a String and search
@@ -59,7 +60,7 @@ fun searchStudentWildSearch(name: String, nameList: ArrayList<String>) {
 fun searchStudentName(name:String,nameList: ArrayList<String>): ArrayList<String> {
     val matchList= ArrayList<String>()
     for(student in nameList){
-        if(student.equals(name)){
+        if(student == name){
             matchList.add(student)
             return matchList
         }
@@ -70,16 +71,16 @@ fun searchStudentName(name:String,nameList: ArrayList<String>): ArrayList<String
 //8. Create a function "searchStudent" that will accept a String and call "searchStudentWildSearch" if the String input is
 //less than or equal to three, and it will call "searchStudentName" if the String input is greater than three.
 fun searchStudent(name:String,nameList: ArrayList<String>){
-    var numberOfChar = name.toCharArray()
+    val numberOfChar = name.toCharArray()
     if(numberOfChar.size <4){
-        searchStudentWildSearch(name,nameList)
+        searchStudentWildSearch(nameList)
     }else{
        searchStudentName(name,nameList)
     }
 }
 
 //9.  Create a function "showStudents" that will print all the entries in the ArrayList.
-fun showStudents(name: String, nameList: ArrayList<String>){
+fun showStudents(nameList: ArrayList<String>){
     for(student in nameList){
     println(student)
  }

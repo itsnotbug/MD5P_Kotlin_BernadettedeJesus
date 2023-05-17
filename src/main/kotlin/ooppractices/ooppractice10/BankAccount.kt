@@ -1,5 +1,4 @@
 package ooppractices.ooppractice10
-
 class BankAccount {
 //    OOPPractice10.kt
 //    Create a class called "BankAccount" that represents a bank account.

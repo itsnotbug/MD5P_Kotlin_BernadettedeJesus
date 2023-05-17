@@ -1,4 +1,4 @@
-
+package ooppractices.ooppractice6
 
 fun main(){
 //    OOPPractice6.kt

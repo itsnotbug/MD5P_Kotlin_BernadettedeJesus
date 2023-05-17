@@ -1,3 +1,4 @@
+package kotlinactivities
 fun main() {
     //Implement ACTIVITY01-C
     val groceryList = arrayListOf("Blueberries", "Mangoes", "Milk", "Eggs", "Sausage", "chicken", "Hotdog", "Butter")

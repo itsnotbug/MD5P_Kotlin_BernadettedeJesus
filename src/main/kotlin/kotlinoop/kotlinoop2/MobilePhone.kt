@@ -1,4 +1,4 @@
-
+package kotlinoop.kotlinoop2
 class MobilePhone(var load:Int) {
     var messageLogs = mutableListOf<String>()
     var textMessageCount:Int=0

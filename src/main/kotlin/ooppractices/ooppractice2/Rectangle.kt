@@ -1,4 +1,4 @@
-
+package ooppractices.ooppractice2
 
 class Rectangle {
     var area:Double=0.0

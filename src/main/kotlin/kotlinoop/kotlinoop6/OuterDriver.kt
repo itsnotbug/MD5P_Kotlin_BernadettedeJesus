@@ -1,4 +1,4 @@
-import kotlinoop.kotlinoop6.Outer
+package kotlinoop.kotlinoop6
 
 fun main(){
     val outerObject =Outer()

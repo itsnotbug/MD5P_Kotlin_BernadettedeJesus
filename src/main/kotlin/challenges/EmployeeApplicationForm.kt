@@ -1,4 +1,4 @@
-package kotlinactivities
+package challenges
 fun main(){
 
     //header

@@ -1,4 +1,4 @@
-import ooppractices.ooppractice3.Book
+package ooppractices.ooppractice3
 
 fun main(){
 

@@ -1,3 +1,4 @@
+package kotlinactivities
 fun main(){
     /* ACTIVITY01-D
     Link for the activity https://docs.google.com/document/d/1-Vdt54pqAFNisezdhPbRvF3y71rsE0KUCnby7twV_oM/edit

@@ -1,8 +1,7 @@
-import ooppractices.ooppractice11.Person
-
+package ooppractices.ooppractice11
 fun main(){
 //   OOPPractice11.kt
-//    Create a data class called kotlinoop.kotlinoop5.Person with the properties name (String) and age (Int). Create an instance of the kotlinoop.kotlinoop5.Person class and print its details.
+//    Create a data class called Person with the properties name (String) and age (Int). Create an instance of the kotlinoop.kotlinoop5.Person class and print its details.
 
     val  person1 =Person("Bernadette",24)
     val person2=Person("Angellou",26)

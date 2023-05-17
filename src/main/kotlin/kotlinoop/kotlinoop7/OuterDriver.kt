@@ -1,4 +1,4 @@
-import kotlinoop.kotlinoop7.Outer
+package kotlinoop.kotlinoop7
 
 fun main(){
     val nested =Outer.Inner()

@@ -1,7 +1,4 @@
 package ooppractices.ooppractice9
-
-import ooppractices.ooppractice8.Date
-
 class Car {
 
 //   OOPPractice9.kt

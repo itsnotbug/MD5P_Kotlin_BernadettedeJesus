@@ -1,4 +1,4 @@
-import ooppractices.ooppractice13.University
+package ooppractices.ooppractice13
 
 fun main(){
 

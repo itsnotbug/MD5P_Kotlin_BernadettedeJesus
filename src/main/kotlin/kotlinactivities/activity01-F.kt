@@ -1,7 +1,4 @@
-
-import java.io.Console
-
-
+package kotlinactivities
 fun main(){
 
 //   ACTIVITY01-F

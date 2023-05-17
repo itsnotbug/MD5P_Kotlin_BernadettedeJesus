@@ -1,5 +1,4 @@
-
-
+package ooppractices.ooppractice4
 class BankAccount {
 
     var balance:Double =1000.0

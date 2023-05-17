@@ -1,4 +1,4 @@
-import kotlin.Boolean as Boolean
+package kotlinactivities
 fun main() {
      //IMPLEMENT ACT01-A Using dataStructure
      //Challenge accepted walang tulugan to -__-
