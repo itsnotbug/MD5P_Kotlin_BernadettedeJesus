@@ -5,7 +5,7 @@ class Teacher(name:String,age:Int):Employee(name,age) {
     fun setSubject(subject:String){
         this.subject =subject
     }
-    fun getSubject():String{
+    private fun getSubject():String{
         return subject
     }
     override fun displayInfo(){

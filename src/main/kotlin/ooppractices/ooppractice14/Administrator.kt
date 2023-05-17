@@ -5,7 +5,7 @@ class Administrator(name:String,age:Int):Employee(name,age) {
     fun setDepartment(subject:String){
         this.department =subject
     }
-    fun getDeparment():String{
+    private fun getDeparment():String{
         return department
     }
     override fun displayInfo(){
