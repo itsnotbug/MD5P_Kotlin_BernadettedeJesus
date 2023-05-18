@@ -11,7 +11,7 @@ fun main(){
     val fullTimeEmployee = FullTimeEmployee(200.0)
     val partTimeEmployee = PartTimeEmployee(100.0)
 
-    println("Full time employee earnings: ${fullTimeEmployee.calculate()}")
-    println("Part time employee earnings: ${partTimeEmployee.calculate()}")
+    println("Full time employee earnings: ${fullTimeEmployee.calculateEarnings()}")
+    println("Part time employee earnings: ${partTimeEmployee.calculateEarnings()}")
 
 }
