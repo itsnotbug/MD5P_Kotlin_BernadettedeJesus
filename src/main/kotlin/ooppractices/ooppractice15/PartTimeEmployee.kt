@@ -1,7 +1,8 @@
 package ooppractices.ooppractice15
 
-class PartTimeEmployee(private val salary:Double):Employee() {
+class PartTimeEmployee(private val hourlyRate:Double,private val hoursOfWork:Double):Employee() {
+    //based on hours per work and number of work
     override fun calculateEarnings(): Double {
-        return salary * 100
+        return   hoursOfWork * hourlyRate
     }
 }
