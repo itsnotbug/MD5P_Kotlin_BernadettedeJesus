@@ -1,5 +1,4 @@
-import kotlinoop.kotlinoop11.Dog
-import kotlinoop.kotlinoop11.Person
+package kotlinoop.kotlinoop11
 
 fun main(){
 
