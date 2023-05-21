@@ -1,6 +1,6 @@
 package ooppractices.ooppractice17
 fun main(){
-//    OOPPracticeActivity17
+// OOPPracticeActivity17
 //Create an interface called ElectronicDevice with the following functions:
 //Functions:
 //fun turnOn()

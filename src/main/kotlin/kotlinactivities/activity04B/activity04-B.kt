@@ -1,5 +1,5 @@
-//package kotlinactivities
-//fun main(){
+package kotlinactivities.activity04B
+fun main(){
 ////    Activity 04 - B
 ////    Covered Topic(s) : Classes
 ////    Instructions :
@@ -27,12 +27,27 @@
 ////    It has a length, date recorded, title, publisher.
 ////    10. Create a Publisher class.
 //
-//    val harryPotterChapter = arrayListOf<String>( "Chapter 1: The Boy Who Lived.", "Chapter 2: The Vanishing Glass.","Chapter 3: The Letters From No One.")
 //
-//    val book = listOf(
-//        Book("Harry Potter and the Sorcerrer's Stone","JK Rowling","June 26,1997","Minalima","978-1338878929","Scholastic Corporation")
-//    )
-//
-//
-//
-//}
+    val magazine = Magazine("John Doe", "Magazine Title", "May", 2023)
+    // Set new values
+    magazine.setEditor("John Wick")
+    magazine.setTitle("New Magazine Title")
+    magazine.setMonthPublished("June")
+    magazine.setYearPublished(2023)
+
+    // Search for a magazine
+    magazine.searchMagazine("New Magazine Title")
+
+    // Display all magazines
+    magazine.displayMagazine()
+
+    println()
+    val newspaper =Newspaper("Sampaguita",15,"January",2023,"No more Taxes")
+    newspaper.setHeadline("New Viva Star on Spotlight")
+    newspaper.setName("Sampaguita")
+    newspaper.setDayPublished(22)
+    newspaper.setMonthPublished("February")
+    newspaper.setYearPublished(2023)
+    newspaper.searchNewsPaper("Sampaguita")
+    newspaper.displayNewspaper()
+}

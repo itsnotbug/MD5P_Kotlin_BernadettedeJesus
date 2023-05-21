@@ -8,10 +8,10 @@ fun main() {
     val frozen = arrayListOf<String>()
 
     for (item in groceryList) {
-        when {
-            item in listOf("Hotdog","chicken","Sausage") -> frozen.add(item)
-            item in listOf("Blueberries", "Mangoes") -> fruits.add(item)
-            item in listOf("Milk", "Eggs", "Butter","Pasta",) -> dairy.add(item)
+        when (item) {
+            in listOf("Hotdog","chicken","Sausage") -> frozen.add(item)
+            in listOf("Blueberries", "Mangoes") -> fruits.add(item)
+            in listOf("Milk", "Eggs", "Butter","Pasta",) -> dairy.add(item)
         }
     }
     println("Fruits:")

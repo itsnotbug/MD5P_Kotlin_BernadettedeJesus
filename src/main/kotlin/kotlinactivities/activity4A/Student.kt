@@ -1,4 +1,4 @@
-package kotlinactivities
+package kotlinactivities.activity4A
 //    Activity 04 - A
 //    Covered Topic(s) : Classes
 //    Instructions :

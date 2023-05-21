@@ -1,7 +1,5 @@
 package practiceactivities
 
-import java.util.SplittableRandom
-
 fun main() {
     //Input
     var option: String = " "
