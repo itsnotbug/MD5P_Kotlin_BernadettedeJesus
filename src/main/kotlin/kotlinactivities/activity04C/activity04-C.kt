@@ -1,4 +1,4 @@
-package kotlinactivities
+package kotlinactivities.activity04C
 fun main(){
 //    Activity 04 - C
 //    Covered Topic(s) : Classes

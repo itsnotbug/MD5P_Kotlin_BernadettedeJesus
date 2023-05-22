@@ -50,4 +50,7 @@ fun main(){
     newspaper.setYearPublished(2023)
     newspaper.searchNewsPaper("Sampaguita")
     newspaper.displayNewspaper()
+
+    val article=Article("New Corona Virus","The new corona virus is found","John Doe")
+    println("Article $article")
 }

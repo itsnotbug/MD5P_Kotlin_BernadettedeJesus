@@ -5,8 +5,4 @@ package kotlinactivities.activity04B
 // A book has a number of pages.
 class Book( private var title:String,private var authors:String,private var yearPublished:Int, private var edition:Int,
            private var ISBN:Long, private var publisher:String,private var chapter:MutableList<String>,private var numberOfPages:Int) {
-
-
-
-
 }
