@@ -1,4 +1,7 @@
 package kotlinactivities.activity04C
+
+import java.awt.Point
+
 fun main(){
 //    Activity 04 - C
 //    Covered Topic(s) : Classes
@@ -20,4 +23,13 @@ fun main(){
 //    Add 5 more type of items you can find in the grocery.
 //    Identify the attributes for all the classes mentioned.
 
+    val chicken = Poultry("Feathers","Beak",true,true)
+    val duck=Poultry("Feathers","beak",true,true)
+    displayPoultry(chicken)
+
+
+}
+
+fun displayPoultry(poultry: Poultry){
+    println("Chicken: ${poultry.beak}")
 }

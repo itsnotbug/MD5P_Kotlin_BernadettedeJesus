@@ -1,4 +1,3 @@
 package kotlinactivities.activity04C
 
-class Poultry {
-}
+data class Poultry(private val feathers: String, val beak: String, private val wings: Boolean, private val claws: Boolean)
