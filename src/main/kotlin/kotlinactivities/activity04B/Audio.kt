@@ -13,7 +13,7 @@ class Audio(private var length:String,private var dataRecorded:String,private va
         this.title =title
     }
     fun setPublisher(publisher: Publisher){
-        this.publisher = publisher.setName()
+        this.publisher = publisher.getName()
     }
     fun setLength():String{
         return length
