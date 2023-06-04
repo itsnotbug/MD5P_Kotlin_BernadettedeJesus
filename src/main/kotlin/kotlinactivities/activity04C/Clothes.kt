@@ -14,34 +14,34 @@ class Clothes{
         material=""
         price=0.0
     }
-    fun getColor(color:String){
+    fun setColor(color:String){
         this.color =color
     }
-    fun getSize(size:Double){
+    fun setSize(size:Double){
         this.size =size
     }
-    fun getBrand(brand:String){
+    fun setBrand(brand:String){
         this.brand =brand
     }
-    fun getMaterial(material:String){
+    fun setMaterial(material:String){
         this.material =material
     }
-    fun getPrice(price:Double){
+    fun setPrice(price:Double){
         this.price =price
     }
-    fun setColor():String{
+    fun getColor():String{
         return color
     }
-    fun setSize():Double{
+    fun getSize():Double{
         return size
     }
-    fun setBrand():String{
+    fun getBrand():String{
         return brand
     }
-    fun setMaterial():String{
+    fun getMaterial():String{
         return material
     }
-    fun setPrice():Double{
+    fun getPrice():Double{
         return price
     }
 }

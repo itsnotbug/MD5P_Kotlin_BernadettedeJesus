@@ -3,22 +3,22 @@ package kotlinactivities.activity04B
 class Article(private var title:String, private var content:String, private var author:String) {
     ////    6. Add a class Article.
 ////    An article has a title, content, author.
-    fun getTitle(title:String){
+    fun setTitle(title:String){
         this.title=title
     }
-    fun getContent(content: String){
+    fun setContent(content: String){
         this.content=content
     }
-    fun getAuthor(author:String){
+    fun setAuthor(author:String){
         this.author =author
     }
-    fun setTitle():String{
+    fun getTitle():String{
         return title
     }
-    fun setContent():String{
+    fun getContent():String{
         return content
     }
-    fun setAuthor():String{
+    fun getAuthor():String{
         return author
     }
 }

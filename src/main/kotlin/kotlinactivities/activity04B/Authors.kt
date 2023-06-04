@@ -3,29 +3,29 @@ package kotlinactivities.activity04B
 class Authors(private var firstName:String,private var lastName:String,private var middleName:String,private var dateOfBirth:String) {
     // 4. Add a class Authors.
     //    Authors have firstName, lastName, middleName, date of birth.
-    fun getFirstName(firstName: String){
+    fun setFirstName(firstName: String){
         this.firstName =firstName
     }
-    fun getLastName(lastName: String){
+    fun setLastName(lastName: String){
         this.lastName=lastName
     }
-    fun getMiddleName(middleName:String){
+    fun setMiddleName(middleName:String){
         this.middleName = middleName
     }
-    fun getDateOfBirth(dateOfBirth: String){
+    fun setDateOfBirth(dateOfBirth: String){
         this.dateOfBirth =dateOfBirth
     }
 
-    fun setFirstName():String{
+    fun getFirstName():String{
         return firstName
     }
-    fun setLastName():String{
+    fun getLastName():String{
         return lastName
     }
-    fun setMiddleName():String{
+    fun getMiddleName():String{
         return middleName
     }
-    fun setDateOfBirth():String{
+    fun getDateOfBirth():String{
         return dateOfBirth
     }
 }

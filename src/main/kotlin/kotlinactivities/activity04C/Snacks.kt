@@ -1,10 +1,3 @@
 package kotlinactivities.activity04C
 
-data class Snack(
-    val name: String,
-    val flavor: String,
-    val texture: String,
-    val type: String,
-    val nutritionalValue: String,
-    val servingSize: String
-)
+data class Snack(private val name: String, private val flavor: String, private val texture: String, private val type: String, private val nutritionalValue: String, private val servingSize: String)

@@ -6,10 +6,10 @@ class Publisher {
     init{
         this.name =""
     }
-    fun getName(name:String){
+    fun setName(name:String){
         this.name = name
     }
-    fun setName():String{
+    fun getName():String{
         return name
     }
 

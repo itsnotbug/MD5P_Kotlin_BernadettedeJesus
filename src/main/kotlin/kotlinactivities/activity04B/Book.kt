@@ -6,50 +6,50 @@ package kotlinactivities.activity04B
 class Book( private var title:String,private var authors:String,private var yearPublished:Int, private var edition:Int,
             private var ISBN:Long, private var publisher:String,private var chapter:MutableList<String>,private var numberOfPages:Int) {
 
-    fun getTitle(title: String) {
+    fun setTitle(title: String) {
         this.title = title
     }
-    fun getAuthor(authors: Authors){
-        this.authors =authors.setFirstName()
+    fun setAuthor(authors: Authors){
+        this.authors =authors.getFirstName()
     }
-    fun getYearPublished(yearPublished: Int){
+    fun setYearPublished(yearPublished: Int){
         this.yearPublished=yearPublished
     }
-    fun getEdition(edition: Int){
+    fun setEdition(edition: Int){
         this.edition =edition
     }
-    fun getISBN(ISBN: Long){
+    fun setISBN(ISBN: Long){
         this.ISBN =ISBN
     }
-    fun getPublisher(publisher: Publisher){
+    fun setPublisher(publisher: Publisher){
         this.publisher = publisher.setName()
     }
-    fun getChapter(chapter: MutableList<String>){
+    fun setChapter(chapter: MutableList<String>){
         this.chapter =chapter
     }
-    fun getNumberOfPages(numberOfPages: Int){
+    fun setNumberOfPages(numberOfPages: Int){
         this.numberOfPages =numberOfPages
     }
 
-    fun setTitle():String{
+    fun getTitle():String{
         return title
     }
-    fun setAuthor():String{
+    fun getAuthor():String{
         return authors
     }
-    fun setEdition():Int{
+    fun getEdition():Int{
         return edition
     }
-    fun setISBN():Long{
+    fun getISBN():Long{
         return ISBN
     }
-    fun setPublisher():String{
+    fun getPublisher():String{
         return publisher
     }
-    fun setChapter():List<String>{
+    fun getChapter():List<String>{
         return chapter
     }
-    fun setNumberOfPages():Int{
+    fun getNumberOfPages():Int{
         return numberOfPages
     }
 }
